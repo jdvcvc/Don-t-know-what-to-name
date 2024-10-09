@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>LET'S GO TO THE RIDLEYS CONCERT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinload.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: lightpink;
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        #no {
+            position: absolute;
+            transition: all 0.3s ease;
+            z-index: 10; /*ensure that the No button stays on top */
+        }
+
+        #image-container, #gif-container, #second-gif-container, #third-image-container, #fourth-image-container, #fifth-image-container, #sixth-image-container, #seventh-image-container, #eight-gif-container {
+            position: absolute;
+            text-align: center;
+            display: none;
+        }
+
+        #image-container {
+            top: 30%;
+            left: 15%;
+            transform: translateX(-50%);
+        }
+
+        #gif-container {
+            top: -90%;
+            left: 79%;
+            transform: translateX(-50%);
+        }
+
+        #second-gif-container {
+            top: 105%;
+            left: 45%;
+            transform: translateX(-50%);
+        }
+
+        #third-image-container {
+            top: 150%;
+            left: 60%;
+            transform: translateX(-50%);
+        }
+
+        #fourth-image-container {
+            top: 0%;
+            left: 25%;
+            transform: translateX(-50%);
+        }
+
+        #fifth-image-container {
+            top: 85%;
+            left: 90%;
+            transform: translateX(-50%);
+        }
+
+        #fifth-image-container img {
+            width: 120px;
+            height: auto;
+        }
+
+        #sixth-image-container {
+            top: -299%;
+            left: 8%;
+            transform: translateX(-50%);
+        }
+
+        #seventh-image-container {
+            top: -300%;
+            left: 78%;
+            transform: translateX(-50%);
+        }
+
+        #eight-gif-container {
+            top: -355%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+         /* Resize the first image */
+         #image-container img {
+            width: 80%; /* Adjust the width as needed */
+            height: 50%; /* Maintain aspect ratio */
+        }
+        /*resize the third image */
+         #third-image-container img {
+            width: 40%;
+            height: 40%;
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="preloader">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+                <div class="rect6"></div>
+                <div class="rect7"></div>
+            </div>
+        </div>
+
+        <div id="bg"></div>
+        <div class="content">
+            <!-- First screen with HELLO BOSSING! and Next button -->
+            <div id="first-screen">
+                <h2>HELLO BOSSING!</h2>
+                <button id="next" type="button" class="btn btn-primary btn-lg">Next</button>
+            </div>
+
+            <!-- Second screen with the main question and buttons -->
+            <div id="second-screen" style="display: none;">
+                <header>
+                    <h2 id="title">LET'S GO TO THE RIDLEYS CONCERT</h2>
+                    <h4 id="desc"></h4>
+                </header>
+
+                <button id="yes" type="button" class="btn btn-danger btn-lg">Let's Go</button>
+                <button id="no" type="button" class="btn btn-info btn-lg">Hard Pass</button>
+
+                <div id="image-container">
+                    <img id="first-image" src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t39.30808-6/462214972_1064326848701863_4949006485104833880_n.jpg?stp=dst-jpg_s640x640&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHYZWRQJCNxk-kpPtwrT4auZQ0FZo47ltZlDQVmjjuW1tdxjU35n7bpC-rurjYLrEUbkhu7O-6v3eYoKghshAZG&_nc_ohc=ysj_XjcJnt0Q7kNvgEdgIRj&_nc_ht=scontent.fmnl8-6.fna&_nc_gid=Aw-DD6EgSWWnZQkFXsbUscd&oh=00_AYBKx7Ydoi04L3s68-Mnx4gM9wZO1Ek7fKTNlUuCotv9jw&oe=670C8813" alt="No Button Image" />
+                </div>
+                
+                <div id="gif-container">
+                    <img id="gif" src="https://media.tenor.com/o9owbF_iALAAAAAM/sad-cat.gif" alt="No Button GIF" />
+                </div>
+
+                <div id="second-gif-container">
+                    <img id="second-gif" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4R2QZUzwSUHEGf1QgWNCInFZXazpVPMctw&s" alt="Second GIF" />
+                </div>
+
+                <div id="third-image-container">
+                    <img id="third-gif" src="https://ih1.redbubble.net/image.2283358635.7564/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.webp" alt="Third image" />
+                </div>
+
+                <div id="fourth-image-container">
+                    <img id="fourth-image" src="https://cdn3.emoji.gg/emojis/2327-cinnacry.png" alt="Cinnacry Image" />
+                </div>
+
+                <div id="fifth-image-container">
+                    <img id="fifth-image" src="https://media.tenor.com/-sEkw2QojuQAAAAe/crying-dog-meme.png" alt="Crying Dog Meme" />
+                </div>
+
+                <div id="sixth-image-container">
+                    <img id="sixth-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT40ZpJ3NX1Pkon0vgqXxWJ6yI9fCW2lv5ljQ&s" alt="Thumbs Up Cat" />
+                </div>
+
+                <div id="seventh-image-container">
+                    <img id="seventh-image" src="https://i.pinimg.com/236x/24/00/4f/24004f4c9290a8cdf113cee8df3bcd4d.jpg" alt="Crying Girl" />
+                </div>
+                
+                <div id="eight-gif-container">
+                    <img id="eight-gif" src="https://media.tenor.com/ctO2QkhV05kAAAAM/crying-crying-meme.gif" alt="Crying Man" />
+                </div>
+
+                <h4 id="response"></h4> <!-- Added this to display the "please" or "why no?" text -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Embed YouTube video with autoplay and timestamp start at 24 seconds, hidden -->
+    <iframe id="music" width="0" height="0" src="https://www.youtube.com/embed/pSg1IOyHv6M?start=24&autoplay=1&mute=0" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <script>
+        let noClickCount = 0; // Variable to track the number of "Hard Pass" button clicks
+
+        // When "Next" button is clicked, show the second screen with the question
+        document.getElementById('next').onclick = function() {
+            document.getElementById('first-screen').style.display = 'none'; // Hide the first screen
+            document.getElementById('second-screen').style.display = 'block'; // Show the second screen
+        };
+        
+        // Show response and GIF when "Hard Pass" is clicked
+        document.getElementById('no').onclick = function() {
+            noClickCount++;
+        
+        // Move the "no" button to a random position
+         moveNoButton();
+
+            if (noClickCount === 1) {
+                document.getElementById('response').innerText = "Please?"; // Display "Please?" for the first click
+                document.getElementById('image-container').style.display = "block"; // Show the first image
+                document.getElementById('gif-container').style.display = "block"; // Show the first GIF
+            } else if (noClickCount === 2) {
+                document.getElementById('response').innerText = "Why no?"; // Display "Why no?" for the second click
+                document.getElementById('second-gif-container').style.display = "block"; // Show the second GIF
+            } else if (noClickCount === 3) {
+                document.getElementById('response').innerText = "Why so mean?" //Display "Why so mean?" for the third click
+                document.getElementById('third-image-container').style.display = "block"; // Show the third GIF
+            } else if (noClickCount === 4) {
+                document.getElementById('response').innerText = "Parang ano lang e" //Display "Parang ano lang e" for the fourth click
+                document.getElementById('fourth-image-container').style.display = "block"; // Show the fourth image
+            } else if (noClickCount === 5) {
+                document.getElementById('response').innerText = "Ano ba naman 'tong tao na 'to" //Display "Ano ba naman 'tong tao na 'to" for the fifth click
+                document.getElementById('fifth-image-container').style.display = "block"; // Show the fifth image
+            } else if (noClickCount ===6) {
+                document.getElementById('response').innerText = "Nang wawarshock ka talaga e no?" //Display "Nang wawarshock ka talaga e no?" for the sixth click
+                document.getElementById('sixth-image-container').style.display = "block"; // Show the sixth image
+            } else if (noClickCount ===7) {    
+                document.getElementById('response').innerText = "Maawa ka na o" //Display "Maawa ka na o" for the seventh click
+                document.getElementById('seventh-image-container').style.display = "block"; // Show the seventh image
+            } else if (noClickCount === 8) {
+                document.getElementById('response').innerText = "HAHAHAHA PEOPLE PLEASER" //Display "HAHAHAHA PEOPLE PLEASER" for the eight click
+                document.getElementById('eight-gif-container').style.display = "block"; // Show the final GIF
+                noClickCount = 0; //Reset the counter for looping
+            }
+        // Change buttons to "Yes" and "No" after the first "Hard Pass"
+        if (noClickCount === 1) {
+                document.getElementById('yes').innerText = "Yes";
+                document.getElementById('no').innerText = "No";
+            }
+        };
+       
+        // Function to move the "No" button to a random position
+            function moveNoButton() {
+            const noButton = document.getElementById('no');
+            const randomX = Math.random() * (window.innerWidth - noButton.offsetWidth);
+            const randomY = Math.random() * (window.innerHeight - noButton.offsetHeight);
+
+            noButton.style.position = 'absolute';
+            noButton.style.left = randomX + 'px';
+            noButton.style.top = randomY + 'px';
+        }
+
+         // When "Yes" button is clicked, hide buttons and stop showing any more images or GIFs
+         document.getElementById('yes').onclick = function() {
+            document.getElementById('response').innerText = "YEY! See you at the concert!"; // Display the final message
+
+            // Hide the buttons when "Yes" is clicked
+            document.getElementById('yes').style.display = 'none';
+            document.getElementById('no').style.display = 'none'
+        };
+    </script>
+
+</body>
+
+</html>
